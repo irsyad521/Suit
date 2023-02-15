@@ -50,7 +50,7 @@ function penentuan(player, komputer) {
 function pemberitahuanh1() {
   const element = document.createElement("h1");
   element.innerHTML = "Anda Menang!!";
-  element.style.fontSize = "5rem";
+  element.style.fontSize = "4rem";
   element.style.border = "5px solid #bc5af9";
   element.style.padding = "2rem";
   element.style.boxShadow = "5px 5px 5px rgba(0,0,0,0.7)";
@@ -60,7 +60,7 @@ function pemberitahuanh1() {
 function pemberitahuanh2() {
   const element = document.createElement("h1");
   element.innerHTML = "Anda Kalah!!";
-  element.style.fontSize = "5rem";
+  element.style.fontSize = "4rem";
   element.style.border = "5px solid #bc5af9";
   element.style.padding = "2rem";
   element.style.boxShadow = "5px 5px 5px rgba(0,0,0,0.7)";
