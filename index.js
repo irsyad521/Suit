@@ -54,6 +54,7 @@ function pemberitahuanh1() {
   element.style.border = "5px solid #bc5af9";
   element.style.padding = "2rem";
   element.style.boxShadow = "5px 5px 5px rgba(0,0,0,0.7)";
+  element.style.textAlign = "center";
   return element;
 }
 
@@ -64,6 +65,7 @@ function pemberitahuanh2() {
   element.style.border = "5px solid #bc5af9";
   element.style.padding = "2rem";
   element.style.boxShadow = "5px 5px 5px rgba(0,0,0,0.7)";
+  element.style.textAlign = "center";
   return element;
 }
 
