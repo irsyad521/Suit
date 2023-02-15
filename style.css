@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #bc5af9;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #aae3e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 7%;
+}
+
+.container .game {
+  width: 50rem;
+  height: 35rem;
+  background-color: #ffcefe;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.game h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.game .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  height: 50%;
+}
+
+.game .row .player {
+  border: 1px solid black;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.game .row .player p {
+  text-align: center;
+  position: absolute;
+  right: 30%;
+  background-color: #ffcefe;
+  padding: 1rem;
+}
+.game .row .computer {
+  border: 1px solid black;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.game .row i {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+#batu1 {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+#gunting1 {
+  transform: rotateY(180deg);
+  transition: 0.3s;
+}
+
+#kertas1 {
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
+#batu1:hover {
+  color: royalblue;
+  transform: rotate(90deg) scale(1.5);
+}
+
+#gunting1:hover {
+  color: royalblue;
+  transform: rotateY(180deg) scale(1.5);
+}
+
+#kertas1:hover {
+  color: royalblue;
+  transform: rotate(90deg) scale(1.5);
+}
+
+.batu2 {
+  transform: rotate(270deg) rotateY(180deg);
+}
+
+.kertas2 {
+  transform: rotate(270deg) rotateY(180deg);
+}
+
+.hasil {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  text-align: center;
+  padding: 2rem;
+  color: gold;
+}
+
+.hasil .player1 {
+  background-color: crimson;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.hasil .tempat {
+  background-color: tomato;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.hasil .komputer {
+  background-color: royalblue;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: 0.5s;
+}
+
+.score {
+  width: 100%;
+
+  display: flex;
+  text-align: center;
+  padding: 0rem 2rem;
+  color: gold;
+  gap: 0.4rem;
+  font-size: 1.5rem;
+}
+
+.score p {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.score .P1 {
+  background-color: crimson;
+}
+
+.score .P2 {
+  background-color: royalblue;
+}
+
+.score .SC {
+  background-color: tomato;
+}
+
+button {
+  background-color: #ffcefe;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #bc5af9;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .game .row .player p {
+    text-align: center;
+    position: absolute;
+    right: 3rem;
+    background-color: #ffcefe;
+    padding: 1rem;
+  }
+  .container .game {
+    width: 40rem;
+    height: 35rem;
+    background-color: #ffcefe;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .game .row .player p {
+    text-align: center;
+    position: absolute;
+    right: 3rem;
+    background-color: #ffcefe;
+    padding: 1rem;
+  }
+  .container .game {
+    width: 40rem;
+    height: 35rem;
+    background-color: #ffcefe;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+}
